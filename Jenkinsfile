@@ -1,5 +1,5 @@
 pipeline {
-  agent { label 'master' } // runs on same node where Jenkins is installed
+  agent any // runs on same node where Jenkins is installed
   tools {
     jdk 'jdk17'
     maven 'Maven3'
