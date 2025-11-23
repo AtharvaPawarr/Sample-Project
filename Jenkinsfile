@@ -6,7 +6,7 @@ pipeline {
   }
   stages {
     stage('Checkout') {
-      steps { git(url: 'https://github.com/yourname/sample-app.git', branch: 'main') }
+      steps { git(url: 'https://github.com/AtharvaPawarr/Sample-Project.git', branch: 'main') }
     }
     stage('Build') {
       steps { sh 'mvn -B -DskipTests clean package' }
